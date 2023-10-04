@@ -1,0 +1,8 @@
+server :
+  port: 8761
+
+eureka :
+  # I don't want the application be client for another eureka server
+  client :
+    fetch-registry: false # I don't want fetch any register from any other eureka server on the net
+    register-with-eureka: false
